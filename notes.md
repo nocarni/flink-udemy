@@ -29,3 +29,8 @@ What if node a1 is down? who will process block 1? In Flink, the intermediary ou
 How does flink keep track of all the computations performed on the data? with the help of abstractions. Each operation results in a new DataSet on each new node.
 
 The data abstractions are immutable. Any operation on a dataset will result in a new dataset. Any operations will be performed on the entire dataset, can't do half of it. the abstractions also contain all of its dependencies
+
+
+
+## Using Maven
+mvn archetype:generate -DgroupId=wc -DartifactId=wc
