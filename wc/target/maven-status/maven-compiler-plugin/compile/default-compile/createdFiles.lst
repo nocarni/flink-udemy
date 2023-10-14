@@ -1,1 +1,3 @@
-wc/App.class
+wc/WordCount.class
+wc/WordCount$1.class
+wc/WordCount$Tokenizer.class

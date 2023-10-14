@@ -34,3 +34,18 @@ The data abstractions are immutable. Any operation on a dataset will result in a
 
 ## Using Maven
 mvn archetype:generate -DgroupId=wc -DartifactId=wc
+
+
+## Flink Read Functions
+- readtextFile(path)
+- readCsvFile(path) - reads csv file and returns dataset of tuples (tupleN - number of elements in the tuple)
+- readFileOfPrimitives(path, Class) - Reads each line of file in the form of Class
+- readFileOfPrimitives(path, delimiter, Class)
+- readHadoopFile(FileInputFormat, Key, Value, path)
+- readSequenceFile(Key, Value, path)
+
+## Filtering
+Must implement the FilterFunction interface as a class or write the function inline.
+
+## Tokenizer
+A class to create Tuple2 instances so each name is transformed into a tuple like (Name, 1), the 1 is used later in the groupby.sum call
