@@ -81,7 +81,7 @@
             <configuration>
                 <archive>
                     <manifest>
-                        <mainClass>wc.WordCount</mainClass>
+                        <mainClass>wc.LeftOuterJoin</mainClass>
                     </manifest>
                 </archive>
             </configuration>

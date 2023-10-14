@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="wc.AppTest" time="0.012" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="wc.AppTest" time="0.01" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="gopherProxySet" value="false"/>
     <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
@@ -16,7 +16,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="/opt/homebrew/Cellar/openjdk@11/11.0.20.1/libexec/openjdk.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/noah/dev/flink-udemy/wc/target/surefire/surefirebooter14738870737053842113.jar /Users/noah/dev/flink-udemy/wc/target/surefire 2023-10-14T15-47-58_928-jvmRun1 surefire640014897127189784tmp surefire_03974165095135747682tmp"/>
+    <property name="sun.java.command" value="/Users/noah/dev/flink-udemy/wc/target/surefire/surefirebooter9145813388486479253.jar /Users/noah/dev/flink-udemy/wc/target/surefire 2023-10-14T16-09-02_244-jvmRun1 surefire7901911369002534260tmp surefire_015529355086626845639tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/Users/noah/dev/flink-udemy/wc/target/test-classes:/Users/noah/dev/flink-udemy/wc/target/classes:/Users/noah/.m2/repository/junit/junit/4.11/junit-4.11.jar:/Users/noah/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/noah/.m2/repository/org/apache/flink/flink-java/1.16.2/flink-java-1.16.2.jar:/Users/noah/.m2/repository/org/apache/flink/flink-core/1.16.2/flink-core-1.16.2.jar:/Users/noah/.m2/repository/org/apache/flink/flink-annotations/1.16.2/flink-annotations-1.16.2.jar:/Users/noah/.m2/repository/org/apache/flink/flink-metrics-core/1.16.2/flink-metrics-core-1.16.2.jar:/Users/noah/.m2/repository/org/apache/flink/flink-shaded-asm-9/9.2-15.0/flink-shaded-asm-9-9.2-15.0.jar:/Users/noah/.m2/repository/org/apache/flink/flink-shaded-jackson/2.12.4-15.0/flink-shaded-jackson-2.12.4-15.0.jar:/Users/noah/.m2/repository/com/esotericsoftware/kryo/kryo/2.24.0/kryo-2.24.0.jar:/Users/noah/.m2/repository/com/esotericsoftware/minlog/minlog/1.2/minlog-1.2.jar:/Users/noah/.m2/repository/org/objenesis/objenesis/2.1/objenesis-2.1.jar:/Users/noah/.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar:/Users/noah/.m2/repository/org/apache/commons/commons-compress/1.21/commons-compress-1.21.jar:/Users/noah/.m2/repository/org/apache/flink/flink-shaded-guava/30.1.1-jre-15.0/flink-shaded-guava-30.1.1-jre-15.0.jar:/Users/noah/.m2/repository/org/apache/commons/commons-lang3/3.3.2/commons-lang3-3.3.2.jar:/Users/noah/.m2/repository/org/apache/commons/commons-math3/3.6.1/commons-math3-3.6.1.jar:/Users/noah/.m2/repository/com/twitter/chill-java/0.7.6/chill-java-0.7.6.jar:/Users/noah/.m2/repository/org/slf4j/slf4j-api/1.7.32/slf4j-api-1.7.32.jar:/Users/noah/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/Users/noah/.m2/repository/org/apache/flink/flink-shaded-force-shading/15.0/flink-shaded-force-shading-15.0.jar:"/>
@@ -33,7 +33,7 @@
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="/Users/noah/dev/flink-udemy/wc/target/surefire/surefirebooter14738870737053842113.jar"/>
+    <property name="surefire.real.class.path" value="/Users/noah/dev/flink-udemy/wc/target/surefire/surefirebooter9145813388486479253.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.runtime.version" value="11.0.20.1+0"/>
@@ -62,5 +62,5 @@
     <property name="java.class.version" value="55.0"/>
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
   </properties>
-  <testcase name="shouldAnswerWithTrue" classname="wc.AppTest" time="0.001"/>
+  <testcase name="shouldAnswerWithTrue" classname="wc.AppTest" time="0"/>
 </testsuite>
