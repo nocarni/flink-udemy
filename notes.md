@@ -49,3 +49,14 @@ Must implement the FilterFunction interface as a class or write the function inl
 
 ## Tokenizer
 A class to create Tuple2 instances so each name is transformed into a tuple like (Name, 1), the 1 is used later in the groupby.sum call
+
+## Flink Optimizer
+Flinks optimizer will add its optimizations functions on it before running a job. It also allows the user to provision optmizations if the type and nature of the data is known beforehand, an exclusive feature of Flink. We should know the nature of the data, size, distribution among nodes, sorted/order, partitioned.
+
+Any assumptions we know about the data, we can pass into Flink as join hints as `obj1.join(obj2, JoinHint.HINTNAME)`
+- JoinHint.OPTIMIZER_CHOOSES - a default hint,
+- JoinHint.BROADCAST_HASH_FIRST - assume data is distributed among diff nodes/networks, and when joining datasets, it requires multiple nodes, requiring a lot of shuffling of data between nodes. We can broadcast a small-ish dataset to all other nodes memory, decreasing the join processing time.
+- JoinHint.BROADCAST_HASH_SECOND - same as above, except for the second dataset.
+- JoinHint.REPARTITION_HASH_FIRST - create a hash table, good when the first input is smaller than the second input
+- JoinHint.REPARTITION_HASH_SECOND - partition each input and build hash table from second input.
+- JoinHint.SORT_MERGE - partition of each input if not done, sorts each input dataset and join is performed on inputs.
